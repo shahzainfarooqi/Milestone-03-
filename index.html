@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Resume Builder</h1>
+    <div class="form-section">
+      <h2>Enter Your Details</h2>
+      <form id="resume-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="title">Title/Position:</label>
+        <input type="text" id="title" placeholder="Your Title" required>
+
+        <label for="contact">Contact Information:</label>
+        <input type="text" id="contact" placeholder="Email or Phone" required>
+
+        <label for="summary">Professional Summary:</label>
+        <textarea id="summary" placeholder="Write a brief summary..." required></textarea>
+
+        <label for="skills">Skills (comma-separated):</label>
+        <input type="text" id="skills" placeholder="e.g., JavaScript, HTML, CSS">
+
+        <label for="experience">Experience:</label>
+        <textarea id="experience" placeholder="Describe your work experience..." required></textarea>
+
+        <button type="button" id="generate-resume">Generate Resume</button>
+      </form>
+    </div>
+    <div class="preview-section">
+      <h2>Live Preview</h2>
+      <div id="resume-preview">
+        <!-- Dynamic Content -->
+      </div>
+      <button id="download-resume">Download Resume</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
